@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page statique, moderne et performante, prête pour GitHub Pages."
+    />
+    <title>Landing Page | Tesr-Copilot-Mobile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <main class="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-16 sm:px-8 lg:px-12">
+      <header class="mb-16 flex items-center justify-between">
+        <span class="rounded-full border border-slate-700 px-3 py-1 text-xs font-medium tracking-wide text-slate-300">
+          Tesr-Copilot-Mobile
+        </span>
+        <a
+          href="#contact"
+          class="rounded-full bg-indigo-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-400"
+        >
+          Commencer
+        </a>
+      </header>
+
+      <section class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-300">Simple • Rapide • Efficace</p>
+          <h1 class="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            Une landing page statique prête à déployer en continu.
+          </h1>
+          <p class="mt-6 max-w-xl text-base text-slate-300 sm:text-lg">
+            Interface épurée, responsive et optimisée pour une mise en ligne instantanée avec GitHub Pages.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#features"
+              class="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-200"
+            >
+              Voir les avantages
+            </a>
+            <a
+              href="https://github.com"
+              class="rounded-lg border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-slate-500"
+            >
+              Voir le dépôt
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-2xl shadow-indigo-950/40">
+          <ul id="features" class="space-y-4">
+            <li class="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+              <h2 class="font-semibold">Fichier unique</h2>
+              <p class="mt-1 text-sm text-slate-300">Une seule page HTML, idéale pour un usage mobile et un déploiement sans friction.</p>
+            </li>
+            <li class="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+              <h2 class="font-semibold">Design moderne</h2>
+              <p class="mt-1 text-sm text-slate-300">Tailwind CSS via CDN pour une UI claire, rapide à charger et adaptable à tous les écrans.</p>
+            </li>
+            <li class="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+              <h2 class="font-semibold">Déploiement automatique</h2>
+              <p class="mt-1 text-sm text-slate-300">Chaque push sur <code class="rounded bg-slate-800 px-1 py-0.5 text-xs">main</code> publie la page via GitHub Actions.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer id="contact" class="mt-auto pt-16 text-sm text-slate-400">
+        © <span id="year"></span> Tesr-Copilot-Mobile — Landing page statique.
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
